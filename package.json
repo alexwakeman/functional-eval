@@ -1,0 +1,32 @@
+{
+  "name": "yld-test",
+  "version": "1.0.0",
+  "description": "Lazy evaluation class, plus unit tests",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^2.5.51",
+    "@types/lodash": "^4.14.66",
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
+    "gulp": "^3.9.1",
+    "jasmine-core": "^2.6.3",
+    "karma": "^1.7.0",
+    "karma-browserify": "^5.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "lodash": "^4.17.4",
+    "ts-loader": "^2.1.0",
+    "tsify": "^3.0.1",
+    "typescript": "^2.3.4"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "coding",
+    "test"
+  ],
+  "author": "Alex Wakeman",
+  "license": "MIT"
+}
