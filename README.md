@@ -16,3 +16,20 @@ to evaluate tests when files change.
 <><><><><><><>
 
 Written in TypeScript, transpiled to ES5.
+
+<><><><><><><>
+
+Usage:
+
+```javascript
+const computation = new Lazy();
+const timesTwo = (a: number) =>  a * 2;
+const plus = (a: number, b: number) => a + b;
+
+const result = computation
+                .add(timesTwo)
+                .add(plus, 1)
+                .add(Math.sqrt)
+                .evaluate([1, 2, 3]);
+expect(isEqual(result, [Math.sqrt(3), Math.sqrt(5), Math.sqrt(7)])).toBe(true);
+```
